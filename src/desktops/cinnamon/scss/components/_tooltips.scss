@@ -3,7 +3,7 @@
    ===================================================================*/
 
 #Tooltip {
-    border-image: url("assets/cinnamon/generated/tooltip.svg") 4;
+    border-color: $dark_bg_color;
     padding: 6px 8px;
     color: $dark_fg_color;
     font-size: 9pt;
