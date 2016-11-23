@@ -83,7 +83,7 @@
 .calendar-nonwork-day {
     border-image: url("assets/cinnamon/generated/calendar-nonwork-day.svg") 6;
     border: none;
-    color: shade($dark_fg_color, .2);
+    color: shade($dark_fg_color, 45%)
 }
 
 .calendar-today {
@@ -94,12 +94,12 @@
 
 .calendar-other-month-day {
     border-image: url("assets/cinnamon/generated/calendar-other-month-day.svg") 6;
-    color: $osd_insensitive_fg_color;
+    color: shade($dark_fg_color, 19%);
     font-weight: normal;
 }
 
 .calendar-week-number {
-    color: shade($dark_fg_color, .2);
+    color: shade($dark_fg_color, 45%);
     font-size: 9pt;
     font-weight: normal;
     width: 1.3em;
