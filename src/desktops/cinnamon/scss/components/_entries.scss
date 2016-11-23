@@ -11,6 +11,7 @@
     padding: $spacing;
     color: $text_color;
     caret-color: $text_color;
+    width: 280px;
 
     &:focus, &:active { border-color: border_focus($borders_color); }
 
@@ -48,6 +49,7 @@
 
 .popup-menu StEntry,
 .modal-dialog StEntry,
+.menu-search-box
 #notification StEntry {
     @include entry;
 }
