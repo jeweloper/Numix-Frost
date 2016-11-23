@@ -27,8 +27,13 @@
     &:active,
     &:pressed,
     &#selected {
-        background-color: $selected_bg_color;
-        color: $selected_fg_color;
+        background-color: $dark_bg_color;
+        font-weight: bold;
+        color: $dark_fg_color;
+        caret-color: $dark_fg_color;
+        caret-size: 1px;
+        selected-color: $selected_fg_color;
+        selection-background-color: $selected_bg_color;	
     }
 
     StIcon {
