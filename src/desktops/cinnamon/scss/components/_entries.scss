@@ -11,7 +11,7 @@
     padding: $spacing;
     color: $text_color;
     caret-color: $text_color;
-    width: 280px;
+    width: 250px;
 
     &:focus, &:active { border-color: border_focus($borders_color); }
 
