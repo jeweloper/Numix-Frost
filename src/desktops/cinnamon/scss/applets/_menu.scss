@@ -4,7 +4,10 @@
 
 /* Favourites */
 .menu-favorites-box {
-    border-image: url("assets/cinnamon/generated/dark-bg.svg") 7;
+    border-color: $borders_color;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
     padding: 0.5em;
 }
 
@@ -12,7 +15,8 @@
     padding: 10px 12px;
 
     &:hover {
-        border-image: url("assets/cinnamon/generated/hover.svg") 9;
+        border-color: transparent;
+        border-radius: 2px;
         color: $selected_bg_color;
     }
 }
@@ -38,7 +42,7 @@
 
 .menu-category-button {
     padding: 7px;
-    color: shade($dark_fg_color, .2);
+    color: shade($dark_fg_color, 45%);
 
     &-greyed {
         padding: 7px;
@@ -48,8 +52,10 @@
 
     &-selected {
         padding: 7px;
-        border-image: url("assets/cinnamon/generated/hover.svg") 7;
-        color: $selected_bg_color;
+        border-color: transparent;
+        border-radius: 2px;
+        background-color: $selected_bg_color;
+	    color: $selected_fg_color; 
     }
 
     &-label:ltr { padding-left: 5px; }
@@ -69,21 +75,26 @@
 
 .menu-application-button {
     padding: 7px;
+    color: shade($dark_fg_color, 19%);
     max-width: 10px;
 
     &-selected {
         padding: 7px;
-        border-image: url("assets/cinnamon/generated/hover.svg") 7;
-        color: $selected_bg_color;
+        border-color: transparent;
+        border-radius: 2px;
+        background-color: $selected_bg_color;
+        color: $selected_fg_color;
     }
 
     &:highlighted {
-        border-image: url("assets/cinnamon/generated/highlighted.svg") 6;
+        border-color: $selected_bg_color;
+	    border-left-width: 2px;
     }
 
     &-selected:highlighted {
-        border-image: url("assets/cinnamon/generated/hover.svg") 7;
-        color: $dark_fg_color;
+        border-color: $selected_bg_color;
+	    border-left-width: 2px;
+        color: $info_fg_color;
     }
 
     &-label:ltr { padding-left: 5px; }
@@ -118,6 +129,10 @@
 
 /* Right-click menu */
 .menu-applications-inner-box StScrollView {
-    border-image: url("assets/cinnamon/generated/dark-bg.svg") 7;
+    color: shade($dark_fg_color, 19%);
+    border-color: $borders_color;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
     padding: .5em .1em;
 }
